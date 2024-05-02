@@ -9,21 +9,27 @@
 </head>
 <body>
 <h1 class="hidden_title">Accueil</h1>
-<header>
-    <h2>
+<header class="header">
+    <h2 class="header__icon">
         <a href="http://portfolio.test/accueil/">
             <img src="http://portfolio.test/wp-content/uploads/2024/04/logo.svg"
                  alt="Logo de Benjamin Marissiaux représentant un B et un M majustcule" height="40" width="40">
         </a>
     </h2>
-    <nav>
-        <ul>
-            <?php foreach (dw_get_navigation_links('main') as $link): ?>
-                <li class="main_nav_container_item">
-                    <a class="nav_icon no_text_decoration" href="<?= $link->url ?>"
-                       title="Aller vers la page <?= $link->label ?>"><?= $link->label ?></a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+    <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn">
+            <span class="mobile-menu__icon"></span>
+        </label>
+        <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+                <?php foreach (dw_get_navigation_links('main') as $link): ?>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="<?= $link->url ?>"
+                           title="Aller vers la page <?= $link->label ?>"><?= $link->label ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     </nav>
 </header>
