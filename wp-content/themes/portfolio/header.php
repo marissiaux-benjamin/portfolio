@@ -17,6 +17,7 @@
         </a>
     </h2>
     <nav class="mobile-menu">
+        <h3 class="hidden_title">navigation principale</h3>
         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
         <label for="checkbox" class="mobile-menu__btn">
             <span class="mobile-menu__icon"></span>
