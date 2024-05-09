@@ -1,0 +1,103 @@
+.main {
+  &_landing-projects {
+    background-image: url("../images/background-forest.svg");
+    background-repeat: no-repeat;
+    background-position-x: -570px;
+    background-size: cover;
+    height: 135vh;
+
+    &_title {
+      font-family: "Loos Bold", sans-serif;
+      font-size: 3em;
+      color: #004F32;
+      text-align: center;
+      padding-top: 3.8em;
+      margin-bottom: 4.7em;
+    }
+
+    &_div {
+      margin-top: 6.5em;
+      text-align: center;
+
+      &_image {
+        width: 4em;
+      }
+    }
+  }
+
+  &_projects {
+    font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+
+
+    &_first-project, &_second-project, &_third-project {
+      min-height: 100vh;
+      background-attachment: fixed;
+
+      &_link:before {
+        content: "";
+        display: block;
+        height: 300%;
+        position: absolute;
+        top: -100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #004F32;
+        z-index: -1;
+        transition: transform .3s ease;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+      }
+
+      &_link {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transition: .5s ease-in-out;
+      }
+
+      &_link:hover:before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      &_link:hover {
+        transform: scale(1);
+      }
+    }
+
+    &_first-project {
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/05/photo-Benjamin-Marissiaux.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+    }
+
+    &_second-project {
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/05/soundtrekker-logo-darken.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+    }
+
+    &_third-project {
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/05/paint-your-day-logo.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: black;
+      position: relative;
+
+    }
+  }
+
+}
