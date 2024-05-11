@@ -61,5 +61,16 @@
       box-shadow: rgba(50, 50, 50, .5) 0 5px 10px;
     }
 
+    &_back-btn{
+      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+      color: #004F32;
+      font-size: 1.2em;
+      &_image{
+        width: 3em;
+        margin-right: .5em;
+        transform: translateY(6px);
+      }
+    }
+
   }
 }
