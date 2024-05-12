@@ -1,0 +1,76 @@
+.main {
+  &_landing-project {
+    text-align: center;
+    padding: 8em 1em 4em 1em;
+
+    &_title, &_description {
+      color: #004F32;
+    }
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      margin-bottom: .5em;
+    }
+
+    &_description {
+      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+      line-height: 1.2em;
+
+      &_link {
+        font-family: "Loos Medium", Arial, Helvetica, sans-serif;
+        color: #004F32;
+      }
+    }
+  }
+
+  &_progression {
+    padding: 2em 1em 2em 1em;
+    background-color: #004F32;
+    &_title, &_text {
+      color: white;
+    }
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      margin-bottom: .8em;
+    }
+
+    &_text {
+      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+      margin-bottom: 1.5em;
+      line-height: 1.2em;
+    }
+  }
+
+  &_galery {
+    padding: 2em 1em 2em 1em;
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      color: #004F32;
+      margin-bottom: 1.2em;
+    }
+
+    &_image {
+      width: 100%;
+      border-radius: 2em;
+      margin-bottom: 2em;
+      box-shadow: rgba(50, 50, 50, .5) 0 5px 10px;
+    }
+
+    &_back-btn{
+      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+      color: #004F32;
+      font-size: 1.2em;
+      &_image{
+        width: 3em;
+        margin-right: .5em;
+        transform: translateY(6px);
+      }
+    }
+
+  }
+}
