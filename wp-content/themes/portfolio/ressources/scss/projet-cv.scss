@@ -25,10 +25,10 @@
   }
 
   &_progression {
-    padding: 0 1em 3em 1em;
-
+    padding: 2em 1em 2em 1em;
+    background-color: #004F32;
     &_title, &_text {
-      color: #004F32;
+      color: white;
     }
 
     &_title {
@@ -45,7 +45,7 @@
   }
 
   &_galery {
-    padding: 0 1em 3em 1em;
+    padding: 2em 1em 2em 1em;
 
     &_title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
