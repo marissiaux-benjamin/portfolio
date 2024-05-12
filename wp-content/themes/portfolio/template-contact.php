@@ -13,7 +13,7 @@
 
         <?php if($errors):?>
             <div class="form__error">
-                <p>Oups&nbsp;! Il semblerait y avoir des erreurs, merci de vérifier.</p>
+                <p>Oups&nbsp;! Il semblerait y avoir des erreurs, merci de v&eacute;rifier.</p>
             </div>
         <?php endif; ?>
 
