@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= dw_asset('css/reset.css'); ?>">
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
-    <title>Accueil</title>
+    <title><?= get_the_title() ?></title>
 </head>
 <body>
-<h1 class="hidden_title">Accueil</h1>
+<h1 class="hidden_title"><?= get_the_title() ?></h1>
 <header class="header">
     <h2 class="header__icon">
         <a href="http://portfolio.test/accueil/">
