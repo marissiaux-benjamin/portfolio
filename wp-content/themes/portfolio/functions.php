@@ -1,5 +1,6 @@
 <?php
 
+const BASE_PATH = __DIR__ . '/portfolio';
 register_nav_menu('main', 'Navigation principale, en-tête du site');
 register_nav_menu('footer', 'Navigation de pied de page');
 function dw_get_navigation_links(string $location): array
@@ -25,6 +26,16 @@ function dw_get_navigation_links(string $location): array
 
     // Retourner le tableau de liens formatés
     return $items;
+}
+
+function component(string $path, array $data = []): void
+{
+    View::component($path, $data);
+}
+
+function base_path(string $path = ''): string
+{
+    return BASE_PATH."/{$path}";
 }
 
 
