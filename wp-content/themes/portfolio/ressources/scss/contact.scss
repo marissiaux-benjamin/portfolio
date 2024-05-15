@@ -30,12 +30,13 @@
     gap: 1em;
     flex-direction: column;
 
-    &__input, &__input-mail {
+    &__input-name, &__input-mail {
+      border-radius: 10em;
       padding: 1em 2em;
       width: calc(100% - 4em - 6px);
     }
 
-    &__input, &__input-mail {
+    &__input-name, &__input-mail, &__input-text {
       font-family: "Loos Light", Arial, Helvetica, sans-serif;
       background-color: transparent;
       border: 3px solid #004F32;
@@ -49,19 +50,18 @@
         &::placeholder {
           opacity: .6;
         }
-
-      }
-
-      &:not(:placeholder-shown) {
-        & ~ label {
-          transform: translate(1em, -4.6em);
-        }
       }
     }
 
-    &__input {
+    &__input-name {
       &:focus {
-        & ~ .main__form__label {
+        & ~ .main__form__label-name {
+          transform: translate(1em, -4.6em);
+        }
+      }
+
+      &:not(:placeholder-shown) {
+        & ~ .main__form__label-name {
           transform: translate(1em, -4.6em);
         }
       }
@@ -73,31 +73,50 @@
           transform: translate(1em, -4.6em);
         }
       }
-    }
 
-    &__input-text {
-      &:focus {
-        & ~ .main__form__text {
-          transform: translate(1em, -12em);
+      &:not(:placeholder-shown) {
+        & ~ .main__form__label-mail {
+          transform: translate(1em, -4.6em);
         }
       }
     }
 
-    &__input, &__input-mail {
-      border-radius: 10em;
+    &__input-name, &__input-mail {
     }
 
-    &__text {
+    &__input-text {
       border-radius: 1.6em;
+      padding-left: 1em;
+      padding-top: 1em;
+
+      &:focus {
+        & ~ .main__form__label-text {
+          transform: translate(1em, -13.3em);
+        }
+      }
+
+      &:not(:placeholder-shown) {
+        & ~ .main__form__label-text {
+          transform: translate(1em, -13.3em);
+        }
+      }
     }
 
-    &__label, &__label-text, &__label-mail {
+
+    &__label-name, &__label-text, &__label-mail {
       display: inline-block;
-      transform: translate(1em, -2.6em);
       font-family: "Loos Light", Arial, Helvetica, sans-serif;
       font-size: 1.5em;
       color: #004F32;
       transition: 300ms ease-in-out;
+    }
+
+    &__label-name, &__label-mail {
+      transform: translate(1em, -2.6em);
+    }
+
+    &__label-text {
+      transform: translate(1em, -11.2em);
     }
 
     &__btn {
