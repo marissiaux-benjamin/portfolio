@@ -1,0 +1,100 @@
+.footer {
+  padding: 2em 1em;
+  background-color: #004F32;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    width: 50%;
+
+    &__title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    &__list {
+      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+      font-size: 1.1em;
+
+      &__item {
+        margin-bottom: .5em;
+        line-height: 1.5em;
+
+        &__link, &__mail, &__nav {
+          padding: .5em 1.5em .5em 0;
+          font-family: "Loos Light", Arial, Helvetica, sans-serif;
+          text-decoration: none;
+          color: white;
+          background-image: url("../images/sapin-blanc.svg");
+          background-repeat: no-repeat;
+          background-size: 1em;
+          transition: .4s cubic-bezier(.41, 0, .34, .99);
+        }
+
+        &__nav {
+          background-position: 6em;
+        }
+
+        &__link {
+          background-position: 9.5em;
+        }
+
+        &__mail {
+          background-position: 14em;
+        }
+
+        &__link:hover, &__mail:hover, &__nav:hover {
+          background-position: right;
+        }
+      }
+    }
+
+    &__socials-list {
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        &__insta-link, &__github-link, &__linkedin-link {
+          display: inline-block;
+          font-size: 3em;
+          text-indent: -999px;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          width: 1em;
+        }
+
+        &__insta-link {
+          background-image: url("../images/instagram_white.svg");
+        }
+
+        &__github-link {
+          background-image: url("../images/github_white.svg");
+        }
+
+        &__linkedin-link {
+          background-image: url("../images/linkedin_white.svg");
+        }
+      }
+    }
+
+  }
+
+  &__section:nth-child(2), &__section:nth-child(3) {
+    margin-bottom: 3em;
+  }
+
+  #instagram-link, #github-link, #linkedin-link {
+
+
+  }
+
+  #instagram-link {
+  }
+
+  #github-link {
+    background-image: url("../images/instagram_white.svg");
+  }
+}
+
