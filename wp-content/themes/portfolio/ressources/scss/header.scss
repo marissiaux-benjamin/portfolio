@@ -81,14 +81,6 @@
       overflow: hidden;
     }
 
-    &__list {
-      transition: .5s;
-      transition-delay: .5s;
-      list-style: none;
-      padding-left: 0;
-      padding-top: 40%;
-    }
-
     &__item {
       font-family: "Loos Bold", sans-serif;
       font-size: 3.5em;
@@ -143,3 +135,6 @@
     }
   }
 }
+
+//imports des mediaqueries
+@import "header-mediaqueris/header-desktop";

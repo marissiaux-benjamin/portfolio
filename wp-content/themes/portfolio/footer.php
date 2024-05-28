@@ -11,8 +11,20 @@
                 mail&nbsp;:&nbsp;<a href="mailto:ben.marissiaux@gmail.com" class="footer__section__list__item__mail">ben.marissiaux@gmail.com</a>
             </li>
             <li class="footer__section__list__item">
-                Adresse&nbsp;:&nbsp;Grand&lsquo;Route 342, 4347 Fexhe-le-haut-Clocher
+                Adresse&nbsp;:&nbsp;Grand&lsquo;Route 342,
+                <br>4347 Fexhe-le-haut-Clocher
             </li>
+        </ul>
+    </section>
+    <section class="footer__section">
+        <h3 class="footer__section__title">Navigation</h3>
+        <ul class="footer__section__list">
+            <?php foreach (dw_get_navigation_links('footer') as $link): ?>
+                <li class="footer__section__list__item">
+                    <a class="footer__section__list__item__nav" href="<?= $link->url ?>"
+                       title="Aller vers la page <?= $link->label ?>"><?= $link->label ?></a>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </section>
     <section class="footer__section">
@@ -37,17 +49,6 @@
                     linkedin
                 </a>
             </li>
-        </ul>
-    </section>
-    <section class="footer__section">
-        <h3 class="footer__section__title">Navigation</h3>
-        <ul class="footer__section__list">
-            <?php foreach (dw_get_navigation_links('footer') as $link): ?>
-                <li class="footer__section__list__item">
-                    <a class="footer__section__list__item__nav" href="<?= $link->url ?>"
-                       title="Aller vers la page <?= $link->label ?>"><?= $link->label ?></a>
-                </li>
-            <?php endforeach; ?>
         </ul>
     </section>
 </footer>

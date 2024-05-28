@@ -68,8 +68,11 @@ body {
     &__list {
       font-family: "Loos Medium", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      color: white;
-      text-align: center;
+      margin-bottom: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
     }
 
     &__button {
@@ -90,5 +93,7 @@ body {
 
 .main__project__image {
   width: 10em;
-  margin-bottom: .5em;
 }
+
+//media queries tablette et desktop
+@import "accueil-mediaqueries/accueil-tablettes";

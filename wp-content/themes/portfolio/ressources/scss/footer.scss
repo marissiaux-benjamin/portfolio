@@ -1,13 +1,12 @@
 .footer {
-  padding: 2em 1em;
+  padding: 3em 1em;
   background-color: #004F32;
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5em 5em;
 
   &__section {
-    width: 50%;
-
     &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 1.5em;
@@ -53,8 +52,7 @@
 
     &__socials-list {
       display: flex;
-      justify-content: space-between;
-
+      gap: 3em;
       &__item {
         &__insta-link, &__github-link, &__linkedin-link {
           display: inline-block;
@@ -78,19 +76,6 @@
         }
       }
     }
-
-  }
-
-  &__section:nth-child(2), &__section:nth-child(3) {
-    margin-bottom: 3em;
-  }
-
-  #instagram-link, #github-link, #linkedin-link {
-
-
-  }
-
-  #instagram-link {
   }
 
   #github-link {
@@ -98,3 +83,4 @@
   }
 }
 
+@import "footer-mediaqueries/footer-phone-tablette";
