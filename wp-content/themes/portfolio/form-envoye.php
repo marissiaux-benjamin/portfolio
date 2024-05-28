@@ -1,18 +1,3 @@
-<?php
-
-const BASE_PATH = __DIR__;
-require BASE_PATH . '/../../../vendor/autoload.php';
-
-use Core\Database;
-
-
-try {
-    new Database(BASE_PATH . '/.env.local.ini');
-} catch (PDOException) {
-    echo "failed connection to data base";
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="fr">

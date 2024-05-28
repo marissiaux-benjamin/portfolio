@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name: a propos
+*/
+?>
+<?php
 get_header()
 ?>
 
@@ -7,6 +12,3 @@ get_header()
 </main>
 
 <?php get_footer(); ?>
-
-
-

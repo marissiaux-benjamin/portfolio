@@ -1,6 +1,6 @@
 <?php
 
-const BASE_PATH = __DIR__ . '/portfolio';
+const BASE_PATH = __DIR__;
 register_nav_menu('main', 'Navigation principale, en-tête du site');
 register_nav_menu('footer', 'Navigation de pied de page');
 function dw_get_navigation_links(string $location): array
