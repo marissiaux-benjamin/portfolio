@@ -13,31 +13,29 @@
       color: #004F32;
       text-align: center;
       padding-top: 3.8em;
-      margin-bottom: .5em;
+      margin-bottom: 2em;
+    }
+
+    &_profil {
+      text-align: center;
+
+      img {
+        display: inline;
+        width: 10em;
+      }
     }
 
     &_div {
       text-align: center;
-      margin-top: 16.5em;
+      margin-top: 4em;
     }
   }
 
   &_presentation {
     color: #004F32;
     padding: 1em 1em 3em;
-
-    &_title {
-      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
-      font-size: 2em;
-      text-align: left;
-      padding-bottom: .5em;
-    }
-
-    &_text {
-      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-      font-size: 1.2em;
-      line-height: 1.3em;
-    }
+    max-width: 800px;
+    margin: 0 auto;
 
     &_div-photo {
       text-align: center;
@@ -50,13 +48,27 @@
       }
     }
 
+    &_tout-sur-moi {
+      &_title {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: left;
+        padding-bottom: .5em;
+      }
+
+      &_text {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
+    }
   }
 
   &_etudes {
     background-color: #004F32;
     color: white;
     padding-left: 1em;
-    padding-top: 2em;
+    padding-top: 5em;
     padding-bottom: 3em;
     position: relative;
 
@@ -107,28 +119,33 @@
     padding: 3em 1em 1em;
     color: #004F32;
 
+    &_liste {
+      &_article {
+        padding-bottom: 3em;
+        flex-basis: 30%;
+
+        &_title {
+          font-size: 1.5em;
+          padding-bottom: .3em;
+        }
+
+        &_text {
+          font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+          line-height: 1.3em;
+        }
+      }
+
+      &_article_title {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      }
+    }
+
     &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
       padding-bottom: 1.5em;
     }
 
-    &_article {
-      padding-bottom: 3em;
-
-      &_title {
-        font-size: 1.5em;
-        padding-bottom: .3em;
-      }
-
-      &_text {
-        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-        line-height: 1.3em;
-      }
-    }
-
-    &_title, &_article_title {
-      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
-    }
   }
 
   &_passion {
@@ -142,24 +159,32 @@
       padding-bottom: 1em;
     }
 
-    &_text {
-      font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-      line-height: 1.3em;
+    &_div-passion {
+      &_text {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        line-height: 1.3em;
+      }
+
     }
   }
-  &_interesse{
+
+  &_interesse {
     padding-top: 2em;
     padding-bottom: 3em;
     text-align: center;
-    &_link{
+
+    &_link {
       border-radius: 20em;
       padding: 1em 1.5em;
       background-color: #004F32;
       color: white;
-      font-family: "Loos Light", Arial, Helvetica, sans-serif ;
+      font-family: "Loos Light", Arial, Helvetica, sans-serif;
       font-size: 1.1em;
       text-decoration: none;
       text-transform: uppercase;
     }
   }
 }
+
+@import "a-propos-mediaqueries/a-propos-flex-competences";
+@import "a-propos-mediaqueries/a-propos-tablette";

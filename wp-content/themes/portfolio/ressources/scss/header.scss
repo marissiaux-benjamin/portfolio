@@ -14,7 +14,7 @@
   .mobile-menu {
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 2%;
     display: inline;
     height: 50px;
     z-index: 9999999;
@@ -106,7 +106,7 @@
 
           &__btn {
             position: fixed;
-            right: 5%;
+            right: 2%;
 
             .mobile-menu__icon {
               background: transparent;
