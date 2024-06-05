@@ -1,5 +1,5 @@
 <footer class="footer">
-    <h2 class="hidden_title"></h2>
+    <h2 class="hidden_title">footer</h2>
     <section class="footer__section">
         <h3 class="footer__section__title">Coordonnées</h3>
         <ul class="footer__section__list">
