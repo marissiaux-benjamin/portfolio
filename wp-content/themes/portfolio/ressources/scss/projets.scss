@@ -1,41 +1,45 @@
 .main {
-  &_landing-projects {
+  &__landing-projects {
     background-image: url("../images/background-forest.svg");
     background-repeat: no-repeat;
     background-position-x: -570px;
     background-size: cover;
     height: 135vh;
 
-    &_title {
+    &__title {
       font-family: "Loos Bold", sans-serif;
       font-size: 3em;
       color: #004F32;
       text-align: center;
       padding-top: 3.8em;
-      margin-bottom: 4.7em;
+      margin-bottom: 1em;
+    }
+    &__logo{
+      margin: 0 auto;
+      max-width: 12em;
     }
 
-    &_div {
-      margin-top: 6.5em;
+    &__div {
+      margin-top: 6em;
       text-align: center;
 
-      &_image {
+      &__image {
         width: 4em;
       }
     }
   }
 
-  &_projects {
+  &__projects {
     font-family: "Loos Bold", Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 3em;
 
 
-    &_first-project, &_second-project, &_third-project {
+    &__first-project, &__second-project, &__third-project {
       min-height: 100vh;
       background-attachment: fixed;
 
-      &_link:before {
+      &__link:before {
         content: "";
         display: block;
         height: 300%;
@@ -51,7 +55,7 @@
         transform-origin: bottom right;
       }
 
-      &_link {
+      &__link {
         display: block;
         text-decoration: none;
         color: white;
@@ -61,17 +65,17 @@
         transition: .5s ease-in-out;
       }
 
-      &_link:hover:before {
+      &__link:hover:before {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
 
-      &_link:hover {
+      &__link:hover {
         transform: scale(1);
       }
     }
 
-    &_first-project {
+    &__first-project {
       background-image: url("http://portfolio.test/wp-content/uploads/2024/05/photo-Benjamin-Marissiaux.jpg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -80,7 +84,7 @@
 
     }
 
-    &_second-project {
+    &__second-project {
       background-image: url("http://portfolio.test/wp-content/uploads/2024/05/photo-soundtrekker.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -89,7 +93,7 @@
 
     }
 
-    &_third-project {
+    &__third-project {
       background-image: url("http://portfolio.test/wp-content/uploads/2024/05/paint-your-day.jpeg");
       background-repeat: no-repeat;
       background-size: cover;

@@ -48,18 +48,12 @@
     </nav>
 </header>
 
-
 <main class="main">
     <section class="wp-block-group main__landing-contact">
         <h2 class="wp-block-heading main__landing-contact__title">Contact</h2>
-
-
-        <!-- wp:html -->
         <div class="wp-block-image size-large main__landing-contact__div"><img src="http://portfolio.test/wp-content/uploads/2024/04/fleche.svg" alt="flèche blanche pointant vers le bas de l'écran" class="wp-image-43 main__landing-contact__div__image"/></div>
-        <!-- /wp:html --></section>
-    <!-- /wp:group -->
+        </section>
 
-    <!-- wp:html -->
     <form action="http://portfolio.test/wp-content/themes/portfolio/contact.php" method="POST" class="main__form">
         <input autocomplete="off" required name="name" type="text" id="name" class="main__form__input-name" placeholder="prenom et nom">
         <label for="name" class="main__form__label-name">Prénom et nom *</label>
@@ -71,7 +65,7 @@
         <label for="message" class="main__form__label-text">Votre message *</label>
         <input name="soumettre" type="submit" value="Envoyer" class="main__form__btn">
     </form>
-    <!-- /wp:html --></main>
+</main>
 
 <footer class="footer">
     <h2 class="hidden_title"></h2>
