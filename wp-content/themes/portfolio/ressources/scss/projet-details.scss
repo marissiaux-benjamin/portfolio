@@ -41,6 +41,7 @@
     &_text {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
       line-height: 1.2em;
+      padding-bottom: 1em;
 
       &_step {
         padding-bottom: 2em;
@@ -70,6 +71,9 @@
       margin-bottom: 1.2em;
     }
 
+    &_images-grid{
+      display: grid;
+    }
 
     &_image {
       width: 100%;
