@@ -71,15 +71,17 @@
       margin-bottom: 1.2em;
     }
 
-    &_images-grid{
-      display: grid;
-    }
+    &_images-grid {
+        text-align: center;
 
-    &_image {
-      width: 100%;
-      border-radius: 2em;
-      margin-bottom: 2em;
-      box-shadow: rgba(50, 50, 50, .5) 0 5px 10px;
+
+      &_image1, &_image2, &_image3, &_image4, &_image5 {
+        width: 100%;
+        border-radius: .5em;
+        margin-bottom: 1em;
+        box-shadow: rgba(50, 50, 50, .5) 0 5px 10px;
+      }
+
     }
 
     &_back-btn {
@@ -94,6 +96,5 @@
       }
     }
   }
-
-
 }
+@import "projet-details-mediaqueries/projet-detail-tablette";
