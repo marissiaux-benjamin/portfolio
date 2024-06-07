@@ -1,0 +1,43 @@
+@media (min-width: 799px) {
+  .main {
+    &_presentation {
+      display: flex;
+      padding-top: 5em;
+
+      &_div-photo {
+        &_photo {
+          width: 25em;
+        }
+      }
+
+      &_tout-sur-moi {
+        margin-left: 4em;
+      }
+    }
+
+    &_etudes{
+      &_articles::before{
+        content: '';
+        position: absolute;
+        left: -160%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 150%;
+        height: 5px;
+        background-color: #CFFFDA;
+        border-radius: 50em;
+      }
+    }
+
+    &_passion{
+      &_div-mes-passions{
+        justify-content: space-around;
+        margin-right: 1.2em;
+        min-width: 50%;
+        max-width: 60%;
+      }
+      }
+    }
+
+  }
+

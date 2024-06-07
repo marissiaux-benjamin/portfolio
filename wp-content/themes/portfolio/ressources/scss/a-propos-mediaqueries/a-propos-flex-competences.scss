@@ -1,0 +1,14 @@
+@media (min-width: 500px) {
+  .main{
+    &_competences{
+      &_liste{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &_article{
+          flex-basis: 18em;
+        }
+      }
+    }
+  }
+}
