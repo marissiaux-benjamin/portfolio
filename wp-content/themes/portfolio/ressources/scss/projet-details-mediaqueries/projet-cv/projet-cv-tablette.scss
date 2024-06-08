@@ -1,41 +1,44 @@
 @media (min-width: 799px) {
   .main {
-    &_galery {
-      &_images-grid {
+    &__galery {
+      &__images-grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         column-gap: 1em;
 
-        &_image1, &_image2, &_image3, &_image4, &_image5 {
+
+        &__image1, &__image2, &__image3, &__image4, &__image5 {
           border-radius: 2em;
           width: unset;
         }
 
-        &_image1 {
+        &__image1 {
           order: 1;
           height: 15em;
         }
 
-        &_image2 {
+        &__image2 {
           order: 2;
+          align-self: center;
         }
 
-        &_image3 {
+        &__image3 {
           order: 3;
           height: 15em;
         }
 
-        &_image4 {
+        &__image4 {
           order: 2;
+          align-self: center;
         }
 
-        &_image5 {
+        &__image5 {
           order: 5;
           height: 26em;
         }
 
-        &_image2, &_image4{
+        &__image2, &__image4{
           height: 10em;
         }
 

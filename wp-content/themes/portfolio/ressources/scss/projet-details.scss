@@ -1,57 +1,57 @@
 .main {
-  &_landing-project {
+  &__landing-project {
     text-align: center;
     padding: 8em 1em 4em 1em;
 
-    &_title, &_description {
+    &__title, &__description {
       color: #004F32;
     }
 
-    &_title {
+    &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 3em;
       margin-bottom: .5em;
     }
 
-    &_description {
+    &__description {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
       line-height: 1.2em;
 
-      &_link {
+      &__link {
         font-family: "Loos Medium", Arial, Helvetica, sans-serif;
         color: #004F32;
       }
     }
   }
 
-  &_progression {
+  &__progression {
     padding: 2em 1em 2em 1em;
     background-color: #004F32;
 
-    &_title, &_text {
+    &__title, &__text {
       color: white;
     }
 
-    &_title {
+    &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
       margin-bottom: .8em;
     }
 
-    &_text {
+    &__text {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
       line-height: 1.2em;
       padding-bottom: 1em;
 
-      &_step {
+      &__step {
         padding-bottom: 2em;
       }
 
-      &_image-container {
+      &__image-container {
         display: none;
         text-align: center;
 
-        &_image-item {
+        &__image-item {
           width: 90%;
           border-radius: 2em;
           box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
@@ -61,35 +61,38 @@
 
   }
 
-  &_galery {
+  &__galery {
     padding: 2em 1em 2em 1em;
 
-    &_title {
+    &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
       color: #004F32;
       margin-bottom: 1.2em;
     }
 
-    &_images-grid {
-        text-align: center;
+    &__images-grid {
+      row-gap: 1em;
+      margin-bottom: 1.5em;
+      text-align: center;
 
-
-      &_image1, &_image2, &_image3, &_image4, &_image5 {
+      &__image1, &__image2, &__image3, &__image4, &__image5, &__stk-image-1, &__stk-image-2, &__stk-image-3, &__stk-image-4, &__stk-image-5{
         width: 100%;
+      }
+
+      &__image1, &__image2, &__image3, &__image4, &__image5, &__stk-image-1, &__stk-image-2, &__stk-image-3, &__stk-image-4, &__stk-image-5, &__image-pyd-1, &__image-pyd-2, &__image-pyd-3, &__image-pyd-4, &__image-pyd-5, &__image-pyd-6 {
         border-radius: .5em;
-        margin-bottom: 1em;
         box-shadow: rgba(50, 50, 50, .5) 0 5px 10px;
       }
 
     }
 
-    &_back-btn {
+    &__back-btn {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
       color: #004F32;
       font-size: 1.2em;
 
-      &_image {
+      &__image {
         width: 3em;
         margin-right: .5em;
         transform: translateY(6px);
@@ -97,4 +100,9 @@
     }
   }
 }
-@import "projet-details-mediaqueries/projet-cv-tablette";
+
+@import "projet-details-mediaqueries/projet-cv/projet-cv-tablette";
+@import "projet-details-mediaqueries/soundtrekker/soundtrekker-galrey-phone";
+@import "projet-details-mediaqueries/soundtrekker/soundtrekker-galery-over799px";
+@import "projet-details-mediaqueries/paint-your-day/paint-your-day-galery-phone";
+@import "projet-details-mediaqueries/paint-your-day/paint-your-day-tablette";
