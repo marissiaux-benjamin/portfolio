@@ -15,7 +15,16 @@
       }
     }
 
-    &_etudes {
+    &_passion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      img {
+        align-self: flex-end;
+        margin-top: 3em;
+        max-width: 35%;
+      }
     }
 
     &_passion {
