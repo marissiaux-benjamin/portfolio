@@ -15,29 +15,18 @@
       }
     }
 
-    &_etudes{
-      &_articles::before{
-        content: '';
-        position: absolute;
-        left: -160%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 150%;
-        height: 5px;
-        background-color: #CFFFDA;
-        border-radius: 50em;
-      }
+    &_etudes {
     }
 
-    &_passion{
-      &_div-mes-passions{
+    &_passion {
+      &_div-mes-passions {
         justify-content: space-around;
         margin-right: 1.2em;
         min-width: 50%;
         max-width: 60%;
       }
-      }
     }
-
   }
+
+}
 

@@ -67,7 +67,6 @@
   &_etudes {
     background-color: #004F32;
     color: white;
-    padding-left: 1em;
     padding-top: 5em;
     padding-bottom: 3em;
     position: relative;
@@ -75,6 +74,7 @@
     &_title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
+      padding-left: .5em;
       margin-bottom: 1.5em;
     }
 
@@ -101,17 +101,18 @@
 
     &_article2 {
       top: 44.7%;
-      right: 19%;
+      right: 18%;
     }
 
     &_article3 {
-      top: 61.7%;
-      right: 9%;
+      top: 60.5%;
+      right: 7%;
     }
 
     &_article4 {
-      top: 78.5%;
-      right: 0;
+      top: 77%;
+      right: 5%;
+      width: 8em;
     }
   }
 
@@ -205,3 +206,4 @@
 
 @import "a-propos-mediaqueries/a-propos-flex-competences";
 @import "a-propos-mediaqueries/a-propos-tablette";
+@import "a-propos-mediaqueries/projet-section-etudes-mediaqueries";
