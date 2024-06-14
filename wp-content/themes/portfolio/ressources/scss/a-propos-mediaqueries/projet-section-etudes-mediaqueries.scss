@@ -5,22 +5,25 @@
         content: '';
         position: absolute;
         left: -104%;
-        top: 50%;
+        top: 38%;
         transform: translateY(-50%);
         width: 100%;
         height: 5px;
         background-color: #CFFFDA;
         border-radius: 50em;
       }
-      &_article2::before{
+
+      &_article2::before {
         left: -120%;
         width: 110%;
       }
-      &_article3::before{
+
+      &_article3::before {
         left: -135%;
         width: 125%;
       }
-      &_article4::before{
+
+      &_article4::before {
         left: -170%;
         width: 160%;
       }
@@ -39,3 +42,35 @@
     }
   }
 }
+
+@media (min-width: 1400px) {
+  .main {
+    &_etudes {
+
+      &_article1::before {
+        left: -450%;
+        width: 440%;
+      }
+
+      &_article2::before {
+        left: -530%;
+        width: 520%;
+      }
+
+      &_article3::before {
+        left: -598%;
+        width: 590%;
+      }
+
+      &_article4::before {
+        left: -765%;
+        width: 755%;
+      }
+    }
+  }
+}
+
+
+
+
+

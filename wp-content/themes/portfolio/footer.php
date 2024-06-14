@@ -52,5 +52,11 @@
         </ul>
     </section>
 </footer>
+<div class="legal-notice-container">
+    <p class="legale-notice-container__credits">
+        © 2024 Benjamin Marissiaux. Tous droits réservés. Créé par Benjamin Marissiaux.
+    </p>
+    <a href="http://portfolio.test/mentions-legales">Voir les mentions légales</a>
+</div>
 </body>
 </html>

@@ -28,7 +28,7 @@
     padding: 2em 1em 2em 1em;
     background-color: #004F32;
 
-    &__title, &__text {
+    &__title, &__text, &__btn {
       color: white;
     }
 
@@ -59,6 +59,21 @@
       }
     }
 
+    &__btn-container {
+      margin-top: 2em;
+      text-align: center;
+
+      &__btn-item {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: white;
+        padding: .5em 1.3em;
+        border: white 2px solid;
+        border-radius: 50px;
+      }
+
+    }
   }
 
   &__galery {
@@ -76,7 +91,7 @@
       margin-bottom: 1.5em;
       text-align: center;
 
-      &__image1, &__image2, &__image3, &__image4, &__image5, &__stk-image-1, &__stk-image-2, &__stk-image-3, &__stk-image-4, &__stk-image-5{
+      &__image1, &__image2, &__image3, &__image4, &__image5, &__stk-image-1, &__stk-image-2, &__stk-image-3, &__stk-image-4, &__stk-image-5 {
         width: 100%;
       }
 
@@ -106,3 +121,4 @@
 @import "projet-details-mediaqueries/soundtrekker/soundtrekker-galery-over799px";
 @import "projet-details-mediaqueries/paint-your-day/paint-your-day-galery-phone";
 @import "projet-details-mediaqueries/paint-your-day/paint-your-day-tablette";
+

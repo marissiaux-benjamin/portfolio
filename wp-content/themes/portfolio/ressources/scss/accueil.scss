@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background-color: #CFFFDA;
@@ -60,7 +64,7 @@ body {
     &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      color: #004F32;
+      color: white;
       padding-bottom: 1.5em;
       text-align: center;
     }
@@ -73,6 +77,14 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.5em;
+
+      &__item {
+        width: 10em;
+        border-radius: 1.3em;
+        box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
+      }
+
+
     }
 
     &__button {
@@ -81,13 +93,25 @@ body {
       font-size: 1.3em;
       text-decoration: none;
       color: white;
-      background-color: #004F32;
+      border: 2px solid white;
       border-radius: 50px;
       padding: .5em 1.3em;
       margin: 0 auto;
       text-align: center;
       width: 7em;
     }
+  }
+
+  &__project:after {
+    content: "";
+    position: absolute;
+    border-radius: 4em;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    height: 5px;
+    background-color: white;
+    transform: translateX(-50%);
   }
 }
 

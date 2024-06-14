@@ -4,13 +4,13 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5em 5em;
+  gap: 2.5em 5em;
 
   &__section {
     &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 1.5em;
-      margin-bottom: 1em;
+      padding-bottom: .8em;
     }
 
     &__list {
