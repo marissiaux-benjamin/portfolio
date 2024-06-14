@@ -1,0 +1,16 @@
+@media (min-width: 1479px) {
+  .main-mention {
+    &__content {
+      padding-right: 15%;
+      padding-left: 15%;
+
+      &__mention-sections:nth-child(even) {
+        align-self: flex-end;
+      }
+
+      &__mention-sections {
+        max-width: 40%;
+      }
+    }
+  }
+}

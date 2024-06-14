@@ -1,0 +1,13 @@
+@media (min-width: 799px) {
+  .main-mention {
+    &__content {
+      &__mention-sections:nth-child(even) {
+        align-self: flex-end;
+      }
+
+      &__mention-sections {
+        max-width: 47%;
+      }
+    }
+  }
+}

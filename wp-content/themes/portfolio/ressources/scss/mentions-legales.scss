@@ -1,0 +1,93 @@
+.main-mention {
+  background-color: #004F32;
+  position: relative;
+
+  &__landing {
+    background-image: url("../images/background-forest.svg");
+    background-repeat: no-repeat;
+    background-position-x: -110px;
+    background-size: cover;
+    height: 135vh;
+    text-align: center;
+
+    &__title {
+      padding-top: 3em;
+      padding-bottom: 1.3em;
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      color: #004F32;
+
+      span {
+        display: block;
+        text-indent: 2.5em;
+      }
+    }
+
+    &__img {
+      width: 8em;
+      padding-bottom: 2em;
+    }
+
+    div {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    &__mention-sections {
+      padding-bottom: 3em;
+
+      &__titles {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+
+      &__text {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        line-height: 1.3em;
+
+        b {
+          font-family: "Loos Medium", Arial, Helvetica, sans-serif;
+        }
+
+      }
+    }
+
+    &__mention-sections:last-of-type:after {
+      content: "";
+      position: absolute;
+      border-radius: 4em;
+      top: 100%;
+      left: 50%;
+      width: 80%;
+      height: 5px;
+      background-color: white;
+      transform: translateX(-50%);
+    }
+
+
+    span {
+      display: block;
+      text-indent: 2.5em;
+    }
+  }
+}
+
+#coordonates {
+  p {
+    padding-bottom: 1em;
+  }
+}
+
+@import "mention-legale-mediaqueries/mention-legale-tablette";
+@import "mention-legale-mediaqueries/metion-legale-desktop";
