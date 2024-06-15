@@ -35,7 +35,7 @@
     font-size: 3em;
 
 
-    &__first-project, &__second-project, &__third-project {
+    &__first-project, &__second-project, &__third-project, &__fourth-project {
       min-height: 100vh;
       background-attachment: fixed;
 
@@ -80,6 +80,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      background-position-y: -1em;
       position: relative;
 
     }
@@ -95,6 +96,16 @@
 
     &__third-project {
       background-image: url("http://portfolio.test/wp-content/uploads/2024/05/paint-your-day.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: black;
+      position: relative;
+
+    }
+
+    &__fourth-project {
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/06/poigne-normale-Grande.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
