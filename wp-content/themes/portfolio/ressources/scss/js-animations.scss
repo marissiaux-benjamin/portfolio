@@ -1,0 +1,28 @@
+
+.reveal [class*="reveal-"] {
+  opacity: 0;
+  transition-delay: 1s;
+}
+
+
+.reveal-visible [class*="reveal-"] {
+  transition: .5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-visible .reveal-1 {
+  transform: translateY(50px);
+}
+
+.reveal-visible .reveal-2 {
+  transform: translateY(50px);
+  transition-delay: .4s;
+}
+
+.reveal-visible .reveal-3 {
+  transform: translateY(50px);
+  transition-delay: .6s;
+}
+
+

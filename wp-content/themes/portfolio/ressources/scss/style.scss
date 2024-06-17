@@ -1,7 +1,7 @@
 // 1. cd wp-content/themes/portfolio/ressources/scss
 //2. sass --watch style.scss:../css/style.css
 
-
+@import "js-animations";
 @import "header";
 @import "accueil";
 @import "contact";

@@ -59,4 +59,5 @@
     <a href="http://portfolio.test/mentions-legales">Voir les mentions légales</a>
 </div>
 </body>
+<script src="<?= dw_asset('/js/main.js') ?>"></script>
 </html>

@@ -50,6 +50,20 @@ body {
       color: white;
       border: white 2px solid;
       border-radius: 50px;
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+      background-position-y: -100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .2s ease-in-out;
+    }
+
+    &_link:hover {
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: 25%;
+      color: #004F32;
+      transition-delay: 0s;
     }
 
     &_div {
@@ -64,7 +78,8 @@ body {
     &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      color: white;
+      color: #004F32;
+      padding-top: 1.5em;
       padding-bottom: 1.5em;
       text-align: center;
     }
@@ -72,11 +87,12 @@ body {
     &__list {
       font-family: "Loos Medium", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      margin-bottom: 2em;
+      padding-bottom: 2em;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5em;
+      column-gap: 2em;
+      row-gap: .5em;
 
       &__item {
         width: 10em;
@@ -85,20 +101,6 @@ body {
       }
 
 
-    }
-
-    &__button {
-      display: block;
-      font-family: "Loos Light", Arial, Helvetica, sans-serif;
-      font-size: 1.3em;
-      text-decoration: none;
-      color: white;
-      border: 2px solid white;
-      border-radius: 50px;
-      padding: .5em 1.3em;
-      margin: 0 auto;
-      text-align: center;
-      width: 7em;
     }
   }
 
@@ -117,6 +119,24 @@ body {
 
 .main__project__image {
   width: 10em;
+}
+
+div {
+  padding-bottom: 2em;
+
+  .main__project__button {
+    display: block;
+    font-family: "Loos Light", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    background-color: #004F32;
+    border-radius: 50px;
+    padding: .5em 1.3em;
+    margin: 0 auto;
+    text-align: center;
+    width: 7em;
+  }
 }
 
 //media queries tablette et desktop

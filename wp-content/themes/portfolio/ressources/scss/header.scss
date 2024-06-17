@@ -5,10 +5,9 @@
   width: 100%;
 
   &__icon {
-    display: inline-block;
     height: 40px;
-    padding-left: 1em;
-    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
   }
 
   .mobile-menu {
@@ -71,10 +70,10 @@
       align-items: center;
       justify-content: center;
       top: 50px;
-      left: 0;
       right: 0;
       z-index: 1;
       height: 0;
+      width: 0;
       opacity: 1;
       transition: .5s;
       transition-delay: .2s;
@@ -85,6 +84,7 @@
       font-family: "Loos Bold", sans-serif;
       font-size: 3.5em;
       padding-bottom: 2em;
+      right: 0;
     }
 
     &__link {
@@ -100,6 +100,7 @@
           &__container {
             background-color: #004F32;
             height: 100%;
+            width: 100%;
             transition-delay: 0s;
             top: 0;
           }
