@@ -1,12 +1,18 @@
 <?php
-get_header()
+
+/*
+Template Name: accueil
+*/
+
 ?>
 
-<main class="main-mention main">
+<?= get_header() ?>
+
+<main class="main main-mention">
     <?= get_the_content() ?>
 </main>
 
-<?php get_footer(); ?>
+<?= get_footer() ?>
 
 
 
