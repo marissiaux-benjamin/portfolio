@@ -4,10 +4,10 @@
       &_articles::before {
         content: '';
         position: absolute;
-        left: -104%;
+        left: -75%;
         top: 38%;
         transform: translateY(-50%);
-        width: 100%;
+        width: 65%;
         height: 5px;
         background-color: #CFFFDA;
         border-radius: 50em;
@@ -39,6 +39,20 @@
 
     &_article3 {
       right: 20%;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .main {
+    &_etudes {
+      &_article3 {
+        right: 2%;
+      }
+
+      &_article4 {
+        right: 0;
+      }
     }
   }
 }

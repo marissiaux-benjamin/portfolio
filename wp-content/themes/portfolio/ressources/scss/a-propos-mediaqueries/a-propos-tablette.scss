@@ -2,37 +2,37 @@
   .main {
     &_presentation {
       display: flex;
-      padding-top: 5em;
-
+      padding-bottom: 7em;
       &_div-photo {
+        margin-right: 1.5em;
+
         &_photo {
           width: 25em;
         }
-      }
-
-      &_tout-sur-moi {
-        margin-left: 4em;
       }
     }
 
     &_passion {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      padding: 0 5em 3em;
 
       img {
-        align-self: flex-end;
-        margin-top: 3em;
-        max-width: 35%;
+        align-self: flex-start;
+        margin-top: 4em;
+        margin-bottom: 3em;
+        max-width: 40%;
       }
     }
 
     &_passion {
       &_div-mes-passions {
         justify-content: space-around;
+        margin-bottom: 3em;
         margin-right: 1.2em;
         min-width: 50%;
-        max-width: 60%;
+        max-width: 40%;
       }
     }
   }

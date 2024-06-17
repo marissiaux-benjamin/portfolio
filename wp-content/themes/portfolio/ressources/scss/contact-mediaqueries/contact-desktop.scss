@@ -1,7 +1,13 @@
 @media (min-width: 600px) {
-  .main{
-    &__landing-contact{
+  .main {
+    &__landing-contact {
       background-position-x: 50%;
+    }
+
+    &__form-container {
+      &__form {
+        max-width: 50%;
+      }
     }
   }
 }

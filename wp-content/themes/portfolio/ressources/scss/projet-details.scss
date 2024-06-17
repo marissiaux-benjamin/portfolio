@@ -1,7 +1,7 @@
 .main {
   &__landing-project {
     text-align: center;
-    padding: 8em 1em 4em 1em;
+    padding: 5em 1em 7em 1em;
 
     &__title, &__description {
       color: #004F32;
@@ -28,51 +28,51 @@
     padding: 2em 1em 2em 1em;
     background-color: #004F32;
 
-    &__title, &__text, &__btn {
-      color: white;
-    }
-
-    &__title {
-      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
-      font-size: 2em;
-      margin-bottom: .8em;
-    }
-
-    &__text {
+    &__text-container {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-      line-height: 1.2em;
-      padding-bottom: 1em;
 
-      &__step {
-        padding-bottom: 2em;
+      &__title {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        margin-bottom: .8em;
+      }
+
+      &__title, &__text, &__btn {
+        color: white;
+      }
+
+      &__content {
+        &__text {
+          color: white;
+        }
+
+        &__image-container {
+          display: none;
+
+          &__image-item {
+            border-radius: 2em;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__content {
+      &__text {
+        line-height: 1.2em;
+        padding-bottom: 1em;
+
+        &__step {
+          padding-bottom: 2em;
+          color: white;
+        }
+
       }
 
       &__image-container {
         display: none;
         text-align: center;
-
-        &__image-item {
-          width: 90%;
-          border-radius: 2em;
-          box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
-        }
       }
-    }
-
-    &__btn-container {
-      margin-top: 2em;
-      text-align: center;
-
-      &__btn-item {
-        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-        font-size: 1.2em;
-        text-decoration: none;
-        color: white;
-        padding: .5em 1.3em;
-        border: white 2px solid;
-        border-radius: 50px;
-      }
-
     }
   }
 
@@ -116,9 +116,11 @@
   }
 }
 
+@import "projet-details-mediaqueries/etapes-over-1200px";
 @import "projet-details-mediaqueries/projet-cv/projet-cv-tablette";
 @import "projet-details-mediaqueries/soundtrekker/soundtrekker-galrey-phone";
 @import "projet-details-mediaqueries/soundtrekker/soundtrekker-galery-over799px";
 @import "projet-details-mediaqueries/paint-your-day/paint-your-day-galery-phone";
 @import "projet-details-mediaqueries/paint-your-day/paint-your-day-tablette";
+@import "projet-details-mediaqueries/projet-sef/projet-sef";
 

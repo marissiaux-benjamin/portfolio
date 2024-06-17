@@ -14,7 +14,7 @@
       color: #004F32;
       text-align: center;
       line-height: 1.125em;
-      padding-top: 3.8em;
+      padding-top: 2em;
       margin-bottom: .5em;
     }
     &__logo{
@@ -24,7 +24,7 @@
 
     &__div {
       text-align: center;
-      margin-top: 5em;
+      margin-top: 3em;
     }
   }
 
@@ -33,116 +33,133 @@
     font-size: 1.5em;
     padding: 2em 0 2em 0;
     text-align: center;
-    color: #004F32;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
   }
+  &__form-container{
+    position: relative;
+    &__form {
+      padding: 0 2em;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      margin: 0 auto;
 
-  &__form {
-    padding: 0 2em;
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-
-    &__input-name, &__input-mail {
-      border-radius: 10em;
-      padding: 1em 2em;
-      width: calc(100% - 4em - 6px);
-    }
-
-    &__input-name, &__input-mail, &__input-text {
-      font-family: "Loos Light", Arial, Helvetica, sans-serif;
-      background-color: transparent;
-      border: 3px solid #004F32;
-      font-size: 1.2em;
-
-      &::placeholder {
-        opacity: 0;
+      &__input-name, &__input-mail {
+        border-radius: 10em;
+        padding: 1em 2em;
+        width: calc(100% - 4em - 6px);
       }
 
-      &:focus {
+      &__input-name, &__input-mail, &__input-text {
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        background-color: transparent;
+        border: 3px solid white;
+        font-size: 1.2em;
+
         &::placeholder {
-          opacity: .6;
+          opacity: 0;
         }
-      }
-    }
 
-    &__input-name {
-      &:focus {
-        & ~ .main__form__label-name {
-          transform: translate(1em, -4.6em);
-        }
-      }
-
-      &:not(:placeholder-shown) {
-        & ~ .main__form__label-name {
-          transform: translate(1em, -4.6em);
-        }
-      }
-    }
-
-    &__input-mail {
-      &:focus {
-        & ~ .main__form__label-mail {
-          transform: translate(1em, -4.6em);
+        &:focus {
+          &::placeholder {
+            opacity: .6;
+          }
         }
       }
 
-      &:not(:placeholder-shown) {
-        & ~ .main__form__label-mail {
-          transform: translate(1em, -4.6em);
+      &__input-name {
+        &:focus {
+          & ~ .main__form__label-name {
+            transform: translate(1em, -4.6em);
+          }
         }
-      }
-    }
 
-    &__input-name, &__input-mail {
-    }
-
-    &__input-text {
-      border-radius: 1.6em;
-      padding-left: 1em;
-      padding-top: 1em;
-
-      &:focus {
-        & ~ .main__form__label-text {
-          transform: translate(1em, -13.3em);
+        &:not(:placeholder-shown) {
+          & ~ .main__form__label-name {
+            transform: translate(1em, -4.6em);
+          }
         }
       }
 
-      &:not(:placeholder-shown) {
-        & ~ .main__form__label-text {
-          transform: translate(1em, -13.3em);
+      &__input-mail {
+        &:focus {
+          & ~ .main__form__label-mail {
+            transform: translate(1em, -4.6em);
+          }
         }
+
+        &:not(:placeholder-shown) {
+          & ~ .main__form__label-mail {
+            transform: translate(1em, -4.6em);
+          }
+        }
+      }
+
+      &__input-name[placeholder], &__input-mail[placeholder] {
+        color: white;
+      }
+
+      &__input-text {
+        border-radius: 1.6em;
+        padding-left: 1em;
+        padding-top: 1em;
+
+        &:focus {
+          & ~ .main__form__label-text {
+            transform: translate(1em, -13.3em);
+          }
+        }
+
+        &:not(:placeholder-shown) {
+          & ~ .main__form__label-text {
+            transform: translate(1em, -13.3em);
+          }
+        }
+      }
+
+
+      &__label-name, &__label-text, &__label-mail {
+        display: inline-block;
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: white;
+        transition: 300ms ease-in-out;
+      }
+
+      &__label-name, &__label-mail {
+        transform: translate(1em, -2.6em);
+      }
+
+      &__label-text {
+        transform: translate(1em, -11.2em);
+      }
+
+      &__btn {
+        display: block;
+        margin: 0 auto 3em;
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        padding: .5em 1em .5em 1em;
+        width: 10em;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 10em;
+        font-size: 1.2em;
+        color: white;
       }
     }
 
-
-    &__label-name, &__label-text, &__label-mail {
-      display: inline-block;
-      font-family: "Loos Light", Arial, Helvetica, sans-serif;
-      font-size: 1.5em;
-      color: #004F32;
-      transition: 300ms ease-in-out;
-    }
-
-    &__label-name, &__label-mail {
-      transform: translate(1em, -2.6em);
-    }
-
-    &__label-text {
-      transform: translate(1em, -11.2em);
-    }
-
-    &__btn {
-      display: block;
-      margin: 0 auto 3em;
-      font-family: "Loos Light", Arial, Helvetica, sans-serif;
-      padding: .5em 1em .5em 1em;
-      width: 10em;
-      background-color: transparent;
-      border: 3px solid #004F32;
-      border-radius: 10em;
-      font-size: 1.2em;
-      color: #004F32;;
+    &__form:after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 50%;
+      height: 4px;
+      background-color: white;
+      border-radius: 3em;
     }
   }
+
 }
 @import "contact-mediaqueries/contact-desktop";

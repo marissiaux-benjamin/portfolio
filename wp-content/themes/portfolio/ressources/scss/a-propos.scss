@@ -12,8 +12,8 @@
       font-size: 3em;
       color: #004F32;
       text-align: center;
-      padding-top: 3.8em;
-      margin-bottom: 2em;
+      padding-top: 2em;
+      margin-bottom: .5em;
     }
 
     &_profil {
@@ -27,7 +27,7 @@
 
     &_div {
       text-align: center;
-      margin-top: 4em;
+      margin-top: 2em;
     }
   }
 
@@ -96,22 +96,22 @@
 
     &_article1 {
       top: 27.5%;
-      right: 30%;
+      right: 25%;
     }
 
     &_article2 {
       top: 44.7%;
-      right: 18%;
+      right: 13%;
     }
 
     &_article3 {
       top: 60.5%;
-      right: 7%;
+      right: -8%;
     }
 
     &_article4 {
       top: 77%;
-      right: 5%;
+      right: -10%;
       width: 8em;
     }
   }
@@ -163,7 +163,7 @@
 
     img {
       align-self: flex-end;
-      margin-top: 3em;
+      margin-bottom: 3em;
       width: 100%;
       border-radius: 1em;
       box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
@@ -186,11 +186,12 @@
 
     img {
       width: 20em;
-      padding-bottom: 2em;
+      margin-bottom: 2em;
     }
 
     &_link {
       border-radius: 20em;
+      margin-bottom: 2em;
       padding: 1em 1.5em;
       background-color: #004F32;
       color: white;
@@ -204,4 +205,5 @@
 
 @import "a-propos-mediaqueries/a-propos-flex-competences";
 @import "a-propos-mediaqueries/a-propos-tablette";
+@import "a-propos-mediaqueries/passion-section-over-1220px";
 @import "a-propos-mediaqueries/projet-section-etudes-mediaqueries";
