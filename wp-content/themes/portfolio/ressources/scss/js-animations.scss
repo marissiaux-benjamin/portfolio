@@ -62,7 +62,17 @@
   transition-delay: .4s;
 }
 
-.reveal-visible .reveal-droite {
+.reveal-visible .reveal-gauche-5 {
+  transform: translateX(20px);
+  transition-delay: .6s;
+}
+
+.reveal-visible .reveal-gauche-7 {
+  transform: translateX(20px);
+  transition-delay: .8s;
+}
+
+.reveal-visible .reveal-droite-1 {
   transform: translateX(-20px);
 }
 
@@ -72,13 +82,18 @@
 }
 
 .reveal-visible .reveal-droite-3 {
-  transform: translateX(-50px);
+  transform: translateX(-20px);
   transition-delay: .3s;
 }
 
 .reveal-visible .reveal-droite-4 {
-  transform: translateX(-50px);
+  transform: translateX(-20px);
   transition-delay: .4s;
+}
+
+.reveal-visible .reveal-droite-6{
+  transform: translateX(-20px);
+  transition-delay: .6s;
 }
 
 

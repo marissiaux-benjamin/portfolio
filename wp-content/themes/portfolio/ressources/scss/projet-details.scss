@@ -28,14 +28,15 @@
     padding: 2em 1em 2em 1em;
     background-color: #004F32;
 
+    &__title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      margin-bottom: .8em;
+      color: white;
+    }
+
     &__text-container {
       font-family: "Loos Normal", Arial, Helvetica, sans-serif;
-
-      &__title {
-        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
-        font-size: 2em;
-        margin-bottom: .8em;
-      }
 
       &__title, &__text, &__btn {
         color: white;
@@ -43,6 +44,7 @@
 
       &__content {
         &__text {
+          line-height: 1.3em;
           color: white;
         }
 
@@ -61,17 +63,36 @@
       &__text {
         line-height: 1.2em;
         padding-bottom: 1em;
-
-        &__step {
-          padding-bottom: 2em;
-          color: white;
-        }
-
       }
 
       &__image-container {
         display: none;
         text-align: center;
+      }
+    }
+
+    &__btn-container {
+      &__btn-item {
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        display: block;
+        width: 8em;
+        padding: .5em 1.3em;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: white 2px solid;
+        border-radius: 50px;
+        background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+        background-position-y: -100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s ease-in-out;
+      }
+      &__btn-item:hover{
+        background-position-y: 28%;
+        color: #004F32;
       }
     }
   }

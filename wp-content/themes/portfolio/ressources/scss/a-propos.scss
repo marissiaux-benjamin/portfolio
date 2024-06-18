@@ -12,7 +12,7 @@
       font-size: 3em;
       color: #004F32;
       text-align: center;
-      padding-top: 2em;
+      padding-top: 5em;
       margin-bottom: .5em;
     }
 
@@ -33,8 +33,8 @@
 
   &_presentation {
     color: #004F32;
-    padding: 1em 1em 3em;
-    max-width: 800px;
+    padding: 10em 1em 3em;
+    max-width: 50em;
     margin: 0 auto;
 
     &_div-photo {
@@ -49,6 +49,8 @@
     }
 
     &_tout-sur-moi {
+      align-self: center;
+
       &_title {
         font-family: "Loos Bold", Arial, Helvetica, sans-serif;
         font-size: 2em;
@@ -106,12 +108,12 @@
 
     &_article3 {
       top: 60.5%;
-      right: -8%;
+      right: 5%;
     }
 
     &_article4 {
       top: 77%;
-      right: -10%;
+      right: 0;
       width: 8em;
     }
   }
@@ -191,7 +193,6 @@
 
     &_link {
       border-radius: 20em;
-      margin-bottom: 2em;
       padding: 1em 1.5em;
       background-color: #004F32;
       color: white;

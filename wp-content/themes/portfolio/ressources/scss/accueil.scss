@@ -38,7 +38,7 @@ body {
       }
     }
 
-    &_link {
+    &_link, .main__project__button, .main__progression__btn-container__btn-item {
       font-family: "Loos Light", Arial, Helvetica, sans-serif;
       font-size: 1.3em;
       display: block;
@@ -54,16 +54,12 @@ body {
       background-position-y: -100%;
       background-repeat: no-repeat;
       background-size: cover;
-      transition: .2s ease-in-out;
+      transition: .5s ease-in-out;
     }
 
     &_link:hover {
-      background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
       background-position-y: 25%;
       color: #004F32;
-      transition-delay: 0s;
     }
 
     &_div {
@@ -73,13 +69,13 @@ body {
   }
 
   &__project {
+    position: relative;
     padding-bottom: 2.5em;
 
     &__title {
       font-family: "Loos Bold", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      color: #004F32;
-      padding-top: 1.5em;
+      color: white;
       padding-bottom: 1.5em;
       text-align: center;
     }
@@ -87,34 +83,25 @@ body {
     &__list {
       font-family: "Loos Medium", Arial, Helvetica, sans-serif;
       font-size: 2em;
-      padding-bottom: 2em;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       column-gap: 2em;
-      row-gap: .5em;
+      row-gap: 1.3em;
 
       &__item {
         width: 10em;
         border-radius: 1.3em;
         box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
       }
+    }
 
-
+    &__list:last-child {
+      row-gap: 0;
     }
   }
 
-  &__project:after {
-    content: "";
-    position: absolute;
-    border-radius: 4em;
-    top: 100%;
-    left: 50%;
-    width: 80%;
-    height: 5px;
-    background-color: white;
-    transform: translateX(-50%);
-  }
+
 }
 
 .main__project__image {
@@ -130,7 +117,7 @@ div {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
-    background-color: #004F32;
+    background-color: transparent;
     border-radius: 50px;
     padding: .5em 1.3em;
     margin: 0 auto;

@@ -1,5 +1,5 @@
 
-.main {
+.main-mention {
 
   &__landing-contact {
     background-image: url("../images/background-forest.svg");
@@ -14,12 +14,13 @@
       color: #004F32;
       text-align: center;
       line-height: 1.125em;
-      padding-top: 2em;
-      margin-bottom: .5em;
+      padding-top: 4em;
     }
-    &__logo{
+
+    &__logo {
       max-width: 12em;
       margin: 0 auto;
+      margin-top: 4em;
     }
 
     &__div {
@@ -28,97 +29,23 @@
     }
   }
 
-  &__instruction-form{
+  &__instruction-form {
     font-family: "Loos Normal", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    padding: 2em 0 2em 0;
+    padding: 2em 0 3em 0;
     text-align: center;
     color: white;
     max-width: 80%;
     margin: 0 auto;
   }
-  &__form-container{
-    position: relative;
+
+  &__form-container {
     &__form {
       padding: 0 2em;
       display: flex;
       gap: 1em;
       flex-direction: column;
       margin: 0 auto;
-
-      &__input-name, &__input-mail {
-        border-radius: 10em;
-        padding: 1em 2em;
-        width: calc(100% - 4em - 6px);
-      }
-
-      &__input-name, &__input-mail, &__input-text {
-        font-family: "Loos Light", Arial, Helvetica, sans-serif;
-        background-color: transparent;
-        border: 3px solid white;
-        font-size: 1.2em;
-
-        &::placeholder {
-          opacity: 0;
-        }
-
-        &:focus {
-          &::placeholder {
-            opacity: .6;
-          }
-        }
-      }
-
-      &__input-name {
-        &:focus {
-          & ~ .main__form__label-name {
-            transform: translate(1em, -4.6em);
-          }
-        }
-
-        &:not(:placeholder-shown) {
-          & ~ .main__form__label-name {
-            transform: translate(1em, -4.6em);
-          }
-        }
-      }
-
-      &__input-mail {
-        &:focus {
-          & ~ .main__form__label-mail {
-            transform: translate(1em, -4.6em);
-          }
-        }
-
-        &:not(:placeholder-shown) {
-          & ~ .main__form__label-mail {
-            transform: translate(1em, -4.6em);
-          }
-        }
-      }
-
-      &__input-name[placeholder], &__input-mail[placeholder] {
-        color: white;
-      }
-
-      &__input-text {
-        border-radius: 1.6em;
-        padding-left: 1em;
-        padding-top: 1em;
-
-        &:focus {
-          & ~ .main__form__label-text {
-            transform: translate(1em, -13.3em);
-          }
-        }
-
-        &:not(:placeholder-shown) {
-          & ~ .main__form__label-text {
-            transform: translate(1em, -13.3em);
-          }
-        }
-      }
-
 
       &__label-name, &__label-text, &__label-mail {
         display: inline-block;
@@ -129,14 +56,95 @@
       }
 
       &__label-name, &__label-mail {
-        transform: translate(1em, -2.6em);
+        transform: translate(1em, -2.5em);
       }
 
       &__label-text {
-        transform: translate(1em, -11.2em);
+        transform: translate(1em, -11em);
+      }
+
+      &__input-name, &__input-mail, &__input-text {
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        background-color: transparent;
+        border: 3px solid white;
+        font-size: 1.2em;
+        color: white;
+
+        &::placeholder {
+          opacity: 0;
+          color: white;
+        }
+
+        &:focus {
+          &::placeholder {
+            opacity: .7;
+          }
+        }
+      }
+
+      &__input-name:focus, &__input-mail:focus, &__input-text:focus {
+      }
+
+      &__input-name, &__input-mail {
+        border-radius: 10em;
+        padding: 1em 2em;
+        width: calc(100% - 4em - 6px);
+      }
+
+      &__input-name {
+        &:focus {
+          & ~ .main-mention__form-container__form__label-name {
+            transform: translate(1em, -5em);
+          }
+        }
+
+        &:not(:placeholder-shown) {
+          & ~ .main-mention__form-container__form__label-name {
+            transform: translate(1em, -5em);
+
+            &:not(:placeholder-shown) {
+              & ~ .main-mention__form-container__form__label-name {
+                transform: translate(1em, -5em);
+              }
+            }
+          }
+        }
+      }
+
+      &__input-mail {
+        &:focus {
+          & ~ .main-mention__form-container__form__label-mail {
+            transform: translate(1em, -5em);
+          }
+        }
+
+        &:not(:placeholder-shown) {
+          & ~ .main-mention__form-container__form__label-mail {
+            transform: translate(1em, -5em);
+          }
+        }
+      }
+
+      &__input-text {
+        border-radius: 1.6em;
+        padding-left: 1em;
+        padding-top: 1em;
+
+        &:focus {
+          & ~ .main-mention__form-container__form__label-text {
+            transform: translate(1em, -13.3em);
+          }
+        }
+
+        &:not(:placeholder-shown) {
+          & ~ .main-mention__form-container__form__label-text {
+            transform: translate(1em, -13.3em);
+          }
+        }
       }
 
       &__btn {
+        cursor: pointer;
         display: block;
         margin: 0 auto 3em;
         font-family: "Loos Light", Arial, Helvetica, sans-serif;
@@ -147,14 +155,22 @@
         border-radius: 10em;
         font-size: 1.2em;
         color: white;
+        background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -100%;
+        transition: .5s ease-in-out;
+      }
+
+      &__btn:hover {
+        background-position-y: 25%;
+        color: #004F32;
       }
     }
 
-    &__form:after{
+    &__form:after {
       content: "";
-      position: absolute;
-      top: 100%;
-      width: 50%;
+      width: 100%;
       height: 4px;
       background-color: white;
       border-radius: 3em;
@@ -162,4 +178,5 @@
   }
 
 }
+
 @import "contact-mediaqueries/contact-desktop";
