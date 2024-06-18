@@ -1,0 +1,11 @@
+.main {
+  &__galery {
+    &__images-grid {
+      &__sef-image1, &__sef-image2, &__sef-image3, &__sef-image4 {
+        width: 19em;
+        border-radius: 2em;
+      }
+    }
+
+  }
+}

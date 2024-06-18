@@ -100,8 +100,6 @@ body {
       row-gap: 0;
     }
   }
-
-
 }
 
 .main__project__image {
@@ -117,13 +115,35 @@ div {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
+    border: 2px solid white;
     background-color: transparent;
     border-radius: 50px;
     padding: .5em 1.3em;
     margin: 0 auto;
     text-align: center;
     width: 7em;
+    margin-bottom: 2em;
+    background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+    background-position-y: -100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
   }
+
+  .main__project__button:hover {
+    background-position-y: 25%;
+    color: #004F32;
+  }
+}
+
+#home-btn-container:after {
+  margin: 0 auto;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: white;
+  border-radius: 3em;
 }
 
 //media queries tablette et desktop
