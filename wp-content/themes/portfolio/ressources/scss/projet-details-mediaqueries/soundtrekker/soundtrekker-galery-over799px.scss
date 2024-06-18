@@ -1,0 +1,40 @@
+@media (min-width: 799px) {
+  .main {
+    &__galery {
+      &__images-grid {
+        &__stk-image-1, &__stk-image-2, &__stk-image-3, &__stk-image-4, &__stk-image-5 {
+          width: auto;
+          align-self: center;
+        }
+
+        &__stk-image-1, &__stk-image-2, &__stk-image-3 {
+          height: 25em;
+        }
+
+        &__stk-image-4, &__stk-image-5 {
+          height: 21em;
+        }
+
+        &__stk-image-1 {
+          order: 4;
+        }
+
+        &__stk-image-2 {
+          order: 2;
+        }
+
+        &__stk-image-3{
+          order: 3;
+        }
+
+        &__stk-image-4 {
+          order: 4;
+        }
+
+        &__stk-image-5 {
+          order: 1;
+        }
+      }
+    }
+  }
+}

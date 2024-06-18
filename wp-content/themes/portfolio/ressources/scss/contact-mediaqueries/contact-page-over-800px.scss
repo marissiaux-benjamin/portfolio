@@ -1,0 +1,13 @@
+@media (min-width: 800px) {
+  .main-mention {
+    &__landing-contact {
+      background-position-x: 50%;
+    }
+
+    .wpcf7 {
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+}

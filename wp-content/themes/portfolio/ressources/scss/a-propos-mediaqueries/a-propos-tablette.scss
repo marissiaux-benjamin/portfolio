@@ -1,0 +1,40 @@
+@media (min-width: 799px) {
+  .main {
+    &_presentation {
+      display: flex;
+      padding-bottom: 7em;
+      &_div-photo {
+        margin-right: 1.5em;
+
+        &_photo {
+          width: 25em;
+        }
+      }
+    }
+
+    &_passion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 5em 3em;
+
+      img {
+        align-self: flex-start;
+        margin-top: 4em;
+        max-width: 40%;
+      }
+    }
+
+    &_passion {
+      &_div-mes-passions {
+        justify-content: space-around;
+        margin-bottom: 3em;
+        margin-right: 1.2em;
+        min-width: 50%;
+        max-width: 40%;
+      }
+    }
+  }
+
+}
+

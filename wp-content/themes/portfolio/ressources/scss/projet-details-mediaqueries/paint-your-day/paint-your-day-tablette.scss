@@ -1,0 +1,53 @@
+@media (min-width: 799px) {
+  .main {
+    &__galery {
+      &__images-grid {
+        justify-content: center;
+
+        &__image-pyd-1, &__image-pyd-2, &__image-pyd-3, &__image-pyd-4, &__image-pyd-5, &__image-pyd-6 {
+          align-self: center;
+          width: auto;
+        }
+
+        &__image-pyd-1, &__image-pyd-2 {
+          height: 15em;
+        }
+
+        &__image-pyd-3, &__image-pyd-4 {
+          align-self: center;
+          height: 18em;
+        }
+
+        &__image-pyd-5, &__image-pyd-6 {
+          align-self: center;
+          height: 13em;
+          width: auto;
+        }
+
+        &__image-pyd-1 {
+          order: 6;
+        }
+
+        &__image-pyd-2 {
+          order: 2;
+        }
+
+        &__image-pyd-3 {
+          order: 5;
+        }
+
+        &__image-pyd-4 {
+          order: 3;
+        }
+
+        &__image-pyd-5 {
+          order: 6;
+        }
+
+        &__image-pyd-6 {
+          order: 1;
+        }
+      }
+    }
+  }
+}

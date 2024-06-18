@@ -1,0 +1,210 @@
+
+.main {
+  &_landing-a-propos {
+    background-image: url("../images/background-forest.svg");
+    background-repeat: no-repeat;
+    background-position-x: -230px;
+    background-size: cover;
+    height: 135vh;
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      color: #004F32;
+      text-align: center;
+      padding-top: 5em;
+      margin-bottom: .5em;
+    }
+
+    &_profil {
+      text-align: center;
+
+      img {
+        display: inline;
+        width: 10em;
+      }
+    }
+
+    &_div {
+      text-align: center;
+      margin-top: 2em;
+    }
+  }
+
+  &_presentation {
+    color: #004F32;
+    padding: 10em 1em 3em;
+    max-width: 50em;
+    margin: 0 auto;
+
+    &_div-photo {
+      text-align: center;
+      padding-bottom: 2.5em;
+
+      &_photo {
+        width: 20em;
+        border-radius: 2em;
+        box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
+      }
+    }
+
+    &_tout-sur-moi {
+      align-self: center;
+
+      &_title {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: left;
+        padding-bottom: .5em;
+      }
+
+      &_text {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  &_etudes {
+    background-color: #004F32;
+    color: white;
+    padding-top: 3.5em;
+    padding-bottom: 3em;
+    position: relative;
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      padding-left: .5em;
+      margin-bottom: 1.5em;
+    }
+
+    &_articles {
+      position: absolute;
+      width: 10em;
+
+      &_title {
+        font-family: "Loos Medium", Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: .5em;
+      }
+
+      &_text {
+        font-family: "Loos Light", Arial, Helvetica, sans-serif;
+        line-height: 1.2em;
+      }
+    }
+
+    &_article1 {
+      top: 27.5%;
+      right: 25%;
+    }
+
+    &_article2 {
+      top: 44.7%;
+      right: 13%;
+    }
+
+    &_article3 {
+      top: 60.5%;
+      right: 5%;
+    }
+
+    &_article4 {
+      top: 77%;
+      right: 0;
+      width: 8em;
+    }
+  }
+
+  &_competences {
+    padding: 3em 1em 1em;
+    color: #004F32;
+
+    &_liste {
+      &_article {
+        padding-bottom: 3em;
+        flex-basis: 30%;
+
+        &_title {
+          font-size: 1.5em;
+          padding-bottom: .3em;
+        }
+
+        &_text {
+          font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+          line-height: 1.3em;
+        }
+      }
+
+      &_article_title {
+        font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      }
+    }
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      padding-bottom: 1.5em;
+    }
+
+  }
+
+  &_passion {
+    padding: 3em 1em 3em;
+    background-color: #004F32;
+    color: white;
+
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+
+    img {
+      align-self: flex-end;
+      margin-bottom: 3em;
+      width: 100%;
+      border-radius: 1em;
+      box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
+    }
+
+    &_div-mes-passions {
+      &_text {
+        font-family: "Loos Normal", Arial, Helvetica, sans-serif;
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  &_interesse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 3em;
+
+    img {
+      width: 20em;
+      margin-bottom: 2em;
+    }
+
+    &_link {
+      border-radius: 20em;
+      padding: 1em 1.5em;
+      background-color: #004F32;
+      color: white;
+      font-family: "Loos Light", Arial, Helvetica, sans-serif;
+      font-size: 1.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@import "a-propos-mediaqueries/a-propos-flex-competences";
+@import "a-propos-mediaqueries/a-propos-tablette";
+@import "a-propos-mediaqueries/passion-section-over-1220px";
+@import "a-propos-mediaqueries/projet-section-etudes-mediaqueries";

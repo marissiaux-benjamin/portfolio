@@ -1,0 +1,17 @@
+@media (min-width: 799px) {
+  .main {
+    &_landing {
+      &_title {
+        padding-top: 3.5em;
+        font-size: 3.5em;
+      }
+
+    }
+    &__project{
+      &__title{
+        font-size: 3em;
+      }
+    }
+  }
+}
+

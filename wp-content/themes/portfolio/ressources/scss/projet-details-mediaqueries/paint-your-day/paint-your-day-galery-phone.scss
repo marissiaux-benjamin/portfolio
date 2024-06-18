@@ -1,0 +1,14 @@
+.main {
+  &__galery {
+    &__images-grid {
+
+      &__image-pyd-1, &__image-pyd-2, &__image-pyd-3, &__image-pyd-4 {
+        max-width: 40%;
+      }
+
+      &__image-pyd-5, &__image-pyd-6 {
+        width: 80%;
+      }
+    }
+  }
+}

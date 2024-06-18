@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #CFFFDA;
+}
+
+.hidden_title {
+  overflow: hidden !important;
+  font-size: 0 !important;
+  text-indent: -100000px !important;
+  position: absolute;
+}
+
+.main {
+  &_landing {
+    background-image: url("../images/background-forest.svg");
+    background-repeat: no-repeat;
+    background-position-x: -230px;
+    background-size: cover;
+    height: 135vh;
+
+    &_title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      color: #004F32;
+      text-align: center;
+      line-height: 1.125em;
+      text-indent: -2em;
+      padding-top: 3.8em;
+      margin-bottom: .5em;
+
+      &_span {
+        display: block;
+        text-indent: 1em;
+      }
+    }
+
+    &_link, .main__project__button, .main__progression__btn-container__btn-item {
+      font-family: "Loos Light", Arial, Helvetica, sans-serif;
+      font-size: 1.3em;
+      display: block;
+      width: 6em;
+      padding: .5em 1.3em;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      border: white 2px solid;
+      border-radius: 50px;
+      background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+      background-position-y: -100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: .5s ease-in-out;
+    }
+
+    &_link:hover {
+      background-position-y: 25%;
+      color: #004F32;
+    }
+
+    &_div {
+      margin-top: 7em;
+      text-align: center;
+    }
+  }
+
+  &__project {
+    position: relative;
+    padding-bottom: 2.5em;
+
+    &__title {
+      font-family: "Loos Bold", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      color: white;
+      padding-bottom: 1.5em;
+      text-align: center;
+    }
+
+    &__list {
+      font-family: "Loos Medium", Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 2em;
+      row-gap: 1.3em;
+
+      &__item {
+        width: 10em;
+        border-radius: 1.3em;
+        box-shadow: rgba(50, 50, 50, .8) 0 5px 10px;
+      }
+    }
+
+    &__list:last-child {
+      row-gap: 0;
+    }
+  }
+}
+
+.main__project__image {
+  width: 10em;
+}
+
+div {
+  padding-bottom: 2em;
+
+  .main__project__button {
+    display: block;
+    font-family: "Loos Light", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: .5em 1.3em;
+    margin: 0 auto;
+    text-align: center;
+    width: 7em;
+    margin-bottom: 2em;
+    background-image: url("http://portfolio.test/wp-content/uploads/2024/06/btn-background.svg");
+    background-position-y: -100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main__project__button:hover {
+    background-position-y: 25%;
+    color: #004F32;
+  }
+}
+
+#home-btn-container:after {
+  margin: 0 auto;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: white;
+  border-radius: 3em;
+}
+
+//media queries tablette et desktop
+@import "accueil-mediaqueries/accueil-tablettes";

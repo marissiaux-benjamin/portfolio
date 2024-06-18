@@ -1,0 +1,99 @@
+
+.reveal [class*="reveal-"] {
+  opacity: 0;
+  transition-delay: 1s;
+}
+
+
+.reveal-visible [class*="reveal-"] {
+  transition: .5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-visible .reveal-static {
+  transition-delay: 0s;
+}
+
+.reveal-visible .reveal-static-2 {
+  transition-delay: .2s;
+}
+
+.reveal-visible .reveal-static-3 {
+  transition-delay: .4s;
+}
+
+.reveal-visible .reveal-static-4 {
+  transition-delay: .6s;
+}
+
+.reveal-visible .reveal-static-5 {
+  transition-delay: .8s;
+}
+.reveal-visible .reveal-static-6 {
+  transition-delay: 1s;
+}
+
+.reveal-visible .reveal-1 {
+  transform: translateY(50px);
+}
+
+.reveal-visible .reveal-2 {
+  transform: translateY(50px);
+  transition-delay: .4s;
+}
+
+.reveal-visible .reveal-3 {
+  transform: translateY(50px);
+  transition-delay: .6s;
+}
+
+.reveal-visible .reveal-gauche-1 {
+  transform: translateX(20px);
+}
+
+.reveal-visible .reveal-gauche-2 {
+  transform: translateX(20px);
+  transition-delay: .2s;
+}
+
+.reveal-visible .reveal-gauche-3 {
+  transform: translateX(20px);
+  transition-delay: .4s;
+}
+
+.reveal-visible .reveal-gauche-5 {
+  transform: translateX(20px);
+  transition-delay: .6s;
+}
+
+.reveal-visible .reveal-gauche-7 {
+  transform: translateX(20px);
+  transition-delay: .8s;
+}
+
+.reveal-visible .reveal-droite-1 {
+  transform: translateX(-20px);
+}
+
+.reveal-visible .reveal-droite-2 {
+  transform: translateX(-20px);
+  transition-delay: .2s;
+}
+
+.reveal-visible .reveal-droite-3 {
+  transform: translateX(-20px);
+  transition-delay: .3s;
+}
+
+.reveal-visible .reveal-droite-4 {
+  transform: translateX(-20px);
+  transition-delay: .4s;
+}
+
+.reveal-visible .reveal-droite-6{
+  transform: translateX(-20px);
+  transition-delay: .6s;
+}
+
+

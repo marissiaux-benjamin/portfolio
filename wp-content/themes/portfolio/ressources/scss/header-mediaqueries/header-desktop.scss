@@ -1,0 +1,49 @@
+@media (min-width: 1000px) {
+  .header {
+
+    .mobile-menu {
+      &__container {
+        position: initial;
+        height: initial;
+        width: initial;
+      }
+
+      &__link {
+        font-size: 1.3em;
+        color: #004F32;
+        position: relative;
+      }
+
+      &__link:after{
+        position: absolute;
+        top: 110%;
+        left: 10%;
+        content: "";
+        width: 0;
+        height: 4px;
+        background-color: #004F32;
+        border-radius: .1em;
+        transition: .3s ease-in;
+      }
+
+      &__link:hover::after {
+        width: 80%;
+      }
+
+      &__list {
+        display: flex;
+        overflow: initial;
+      }
+
+      &__item {
+        font-size: 2em;
+        padding: .5em .5em;
+      }
+
+      &__btn {
+        display: none;
+      }
+
+    }
+  }
+}

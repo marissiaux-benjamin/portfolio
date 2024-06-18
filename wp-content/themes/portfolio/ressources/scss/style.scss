@@ -1,0 +1,15 @@
+// 1. cd wp-content/themes/portfolio/ressources/scss
+//2. sass --watch style.scss:../css/style.css
+
+@import "js-animations";
+@import "header";
+@import "accueil";
+@import "contact-page";
+@import "contact-mediaqueries/verifcation-form-sentences";
+@import "a-propos";
+@import "projets";
+@import "projet-details";
+@import "mentions-legales";
+@import "footer";
+@import "mention-legales-div";
+@import url("../css/fonts.css");
